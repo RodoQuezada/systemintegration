@@ -1,1 +1,0 @@
-insert into person (name, last_name, email, phone_number) VALUES ('Rodolfo', 'Quezada', 'rodolfo.quezada.s@gmail.com', 9123123);
