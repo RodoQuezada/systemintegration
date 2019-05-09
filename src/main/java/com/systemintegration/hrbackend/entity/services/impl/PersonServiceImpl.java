@@ -12,11 +12,11 @@ import org.springframework.stereotype.Service;
 import java.util.stream.Collector;
 
 @Service
-public class PersonService implements IPersonService {
+public class PersonServiceImpl implements IPersonService {
 
     private final IPersonRepository personRepository;
 
-    public PersonService(IPersonRepository personRepository) {
+    public PersonServiceImpl(IPersonRepository personRepository) {
         this.personRepository = personRepository;
     }
 
