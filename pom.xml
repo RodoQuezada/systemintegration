@@ -10,15 +10,18 @@
     </parent>
     <groupId>com.systemintegration</groupId>
     <artifactId>hr-back-end</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2</version>
     <name>hr-back-end</name>
     <description>Back-End Api Rest Spring Framework</description>
+
+    <packaging>jar</packaging>
+
 
     <developers>
         <developer>
             <id>rodo</id>
             <name>Rodolfo Quezada</name>
-            <email>Rodolfo.quezada@gazu.cl</email>
+            <email>Rodolfo.quezada.s@gmail.com</email>
         </developer>
     </developers>
 
@@ -83,6 +86,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <finalName>hr-back-end</finalName>
+                </configuration>
             </plugin>
 
 

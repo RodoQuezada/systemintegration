@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 @Entity
 @Data
-@Table
+@Table(name = "persons")
 public class Person implements Serializable {
 
     @Id
@@ -19,5 +19,8 @@ public class Person implements Serializable {
     private String email;
     @Column(name = "phone_number")
     private int phoneNumber;
+
+    private String sobrenombre;
+
 
 }

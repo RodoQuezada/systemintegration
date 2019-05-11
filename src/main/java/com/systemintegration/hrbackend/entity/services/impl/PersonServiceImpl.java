@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.stream.Collector;
 
@@ -21,9 +22,16 @@ public class PersonServiceImpl implements IPersonService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public List<Person> getAll() {
         List<Person> personList = new ArrayList<>();
         personRepository.findAll().forEach(personList::add);
         return personList;
+    }
+
+    @Override
+    public Person save(Person person) {
+        personRepository.save(person);
+        return person;
     }
 }

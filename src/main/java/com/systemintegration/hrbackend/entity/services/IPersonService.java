@@ -8,5 +8,6 @@ public interface IPersonService {
 
     List<Person> getAll();
 
+    Person save(Person person);
 
 }
