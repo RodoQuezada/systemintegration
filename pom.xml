@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.systemintegration</groupId>
     <artifactId>hr-back-end</artifactId>
-    <version>0.0.2</version>
+    <version>0.1.1</version>
     <name>hr-back-end</name>
     <description>Back-End Api Rest Spring Framework</description>
 
